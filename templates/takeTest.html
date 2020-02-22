@@ -17,16 +17,24 @@
             background-color: rgb(39, 38, 38) ;
             transition-delay: 2s ease;
             color: white;
-            border: 1px solid white;
-            height: 12rem;
+            border: 1px solid #FD6A02;
+            height: 4rem;
         }
         .card:hover {
-            /* -webkit-box-shadow: 10px 10px 12px -3px rgba(209,202,209,1);
-        -moz-box-shadow: 10px 10px 12px -3px rgba(209,202,209,1);
-        box-shadow: 10px 10px 12px -3px rgba(209,202,209,1); */
-        color: rgb(39, 38, 38);
-        background-color: white;
+            -webkit-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+            -moz-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+            box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+        /* color: rgb(39, 38, 38);
+        background-color: white; */
         }
+
+        /* .btn-outline-dark:hover{
+        background-color: rgb(39, 38, 38);
+        -webkit-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+        -moz-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+        box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+        transition-delay: 1.5s ease;
+        } */
     </style>
 </head>
 
@@ -34,7 +42,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="{{ url_for('home') }}" style="color: white;">
-            OCULUS
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="" srcset="" width="100px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +69,13 @@
     <div class="jumbotron jumbotron-fluid" style="background-color: transparent;">
         <center>
             <h1 class="display-1" style="color: white;">
-            <p class="lead" style="color: white;">INSTRUCTIONS</p>
-            <hr class="my-4" style="background-color: white; width: 70%" />
+            <h3 style="color: #FD6A02;">INSTRUCTIONS</h3>
+            <hr class="my-4" style="background-color: white; width: 40%" />
         </center>
+    </div>
+
+    <div class="container" style="color: azure;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, nulla vel! Enim quibusdam veniam voluptatum praesentium neque dolor eum fugit beatae. Aspernatur quisquam placeat hic ea animi tenetur doloribus excepturi?</p>
     </div>
 
     <!-- card Options -->
@@ -73,10 +85,13 @@
         style="border-radius: 1rem;"> 
 
             <center><div class="card-body mx-auto">
-                <h5 class="card-title">DYSLEXIA</h5>
-                <p class="card-text">desc</p>
+                <a href="{{ url_for('dyslexia') }}" style="text-decoration: none; color: white">
+                    <h5 class="card-title"> DYSLEXIA
+                </h5></a>
+                
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('dyslexia') }}" role="button">Test Now!</a>
+                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('dyslexia') }}" role="button"
+                        style="color: #FD6A02; border-color: #FD6A02;">Test Now!</a> -->
                 </p>
             </div></center>
         </div>
@@ -85,11 +100,15 @@
         style="border-radius: 1rem;">
 
             <center><div class="card-body mx-auto">
-                <h5 class="card-title">ADHD</h5>
-                <p class="card-text">desc</p>
+                <a href="{{ url_for('adhd') }}" style="text-decoration: none; color: white">
+                    <h5 class="card-title"> ADHD
+                    </h5>
+                </a>
+                
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('adhd') }}" role="button">Test
-                        Now!</a>
+                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('adhd') }}" role="button"
+                        style="color: #FD6A02; border-color: #FD6A02;">Test
+                        Now!</a> -->
                 </p>
             </div></center>
         </div>
@@ -98,11 +117,15 @@
         style="border-radius: 1rem;">
 
             <center><div class="card-body">
-                <h5 class="card-title">AUTISM</h5>
-                <p class="card-text">desc</p>
+                <a href="{{ url_for('autism') }}" style="text-decoration: none; color: white">
+                    <h5 class="card-title"> AUTISM
+                    </h5>
+                </a>
+                
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('autism') }}" role="button">Test
-                        Now!</a>
+                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('autism') }}" role="button"
+                        style="color: #FD6A02; border-color: #FD6A02;">Test
+                        Now!</a> -->
                 </p>
             </div>
             </center>
