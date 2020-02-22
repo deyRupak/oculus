@@ -10,8 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Oculus</title>
+    <title>Oculus | Test</title>
 
+    <style>
+        .card {
+            background-color: rgb(39, 38, 38) ;
+            transition-delay: 2s ease;
+            color: white;
+            border: 1px solid white;
+            height: 12rem;
+        }
+        .card:hover {
+            /* -webkit-box-shadow: 10px 10px 12px -3px rgba(209,202,209,1);
+        -moz-box-shadow: 10px 10px 12px -3px rgba(209,202,209,1);
+        box-shadow: 10px 10px 12px -3px rgba(209,202,209,1); */
+        color: rgb(39, 38, 38);
+        background-color: white;
+        }
+    </style>
 </head>
 
 <body style="background-color: rgb(39, 38, 38);">
@@ -40,18 +56,55 @@
         </div>
     </nav>
     <br>
-    
-    <!-- banner -->
+
+    <!-- instructions -->
     <div class="jumbotron jumbotron-fluid" style="background-color: transparent;">
         <center>
-            <h1 class="display-1" style="color: white;"> 
-                <span class="display-4">project</span> OCULUS</h1>
-            <p class="lead" style="color: white;">project_desc</p>
-            <hr class="my-4" style="background-color: white; width: 70%"/>
-            <p class="lead">
-                <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
-            </p>
+            <h1 class="display-1" style="color: white;">
+            <p class="lead" style="color: white;">INSTRUCTIONS</p>
+            <hr class="my-4" style="background-color: white; width: 70%" />
         </center>
+    </div>
+
+    <!-- card Options -->
+    <div class="card-deck container mx-auto" style="margin-top: 10rem;">
+
+        <div class="card" 
+        style="border-radius: 1rem;"> 
+
+            <center><div class="card-body mx-auto">
+                <h5 class="card-title">DYSLEXIA</h5>
+                <p class="card-text">desc</p>
+                <p class="lead">
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                </p>
+            </div></center>
+        </div>
+
+        <div class="card" 
+        style="border-radius: 1rem;">
+
+            <center><div class="card-body mx-auto">
+                <h5 class="card-title">ADHD</h5>
+                <p class="card-text">desc</p>
+                <p class="lead">
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                </p>
+            </div></center>
+        </div>
+
+        <div class="card"
+        style="border-radius: 1rem;">
+
+            <center><div class="card-body">
+                <h5 class="card-title">AUTISM</h5>
+                <p class="card-text">desc</p>
+                <p class="lead">
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                </p>
+            </div>
+            </center>
+        </div>
     </div>
 
 
