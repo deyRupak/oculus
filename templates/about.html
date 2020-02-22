@@ -5,19 +5,66 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Oculus | About</title>
+    <style>
+        body {}
+
+        .card {
+            transition: box-shadow .3s;
+            width: 300px;
+            margin: 50px;
+            border-radius: 10px;
+            border: 1px solid;
+            background: rgb(51, 48, 48);
+            float: left;
+
+        }
+
+        .card:hover {
+            box-shadow: 0 0 11px rgba(255, 255, 255, 0.9);
+        }
+
+        .jumbotron {
+            background: none
+        }
+
+        .white-color {
+            color: white;
+        }
+
+        .inside-card {
+            color: white;
+        }
+
+        .orang {
+            background-color: #FD6A02;
+            height: 200px;
+
+        }
+
+        .waveimg {
+            position: absolute;
+            z-index: -1;
+            margin-top: -130px;
+        }
+
+        .usecase {
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
 <body style="background-color: rgb(39, 38, 38);">
 
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="{{ url_for('home') }}" style="color: white;">
-            OCULUS
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +86,117 @@
         </div>
     </nav>
     <br>
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5 text-center white-color">What is <b style="color: #FD6A02;">OCULUS</b>?</h1>
+            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
+                ADHD,Autism and Dyslexia.The project aims early detection of 'Autism' and 'Dyslexia' through a 
+                web platform fueled by machine learning. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
+                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
+                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
+                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
+                Duis aliquet commodo iaculis.</p>
+
+        </div>
+    </div>
+
+
+    <center><img src="{{url_for('static', filename='eyetrans.png')}}" width="300px" style="margin-top: -50px;" /></center>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5 text-center white-color">DETECTION</h1>
+            <p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body inside-card" style="width: 18rem;">
+                            <h5 class="card-title">ADHD</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body inside-card">
+                            <h5 class="card-title">AUTISM</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body inside-card">
+                            <h5 class="card-title">DYSLEXIA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5 text-center white-color">APPROACH</h1>
+            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
+                ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
+                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
+                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
+                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
+                Duis aliquet commodo iaculis.</p>
+
+        </div>
+    </div>
+
+
+    <div class="waveimg">
+        <img src="{{url_for('static', filename='wave.png')}}" style="height: auto;
+    max-width: 100%;" /></center>
+        <div class="orang"></div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid usecase">
+        <div class="container">
+            <h1 class="display-5 text-center white-color">USE CASE </h1>
+            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
+                ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
+                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
+                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
+                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
+                Duis aliquet commodo iaculis.</p>
+
+        </div>
+    </div>
+<center>
+    <div class="white-color">Made with <span style="color: #e25555;">&#9829;</span> by GALACTICOS
+    </div>
+
+</center>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
