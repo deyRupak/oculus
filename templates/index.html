@@ -12,6 +12,16 @@
 
     <title>Oculus</title>
 
+    <style>
+        .btn-outline-dark:hover{
+            background-color: rgb(39, 38, 38);
+            -webkit-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+            -moz-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+            box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
+            transition-delay: 1.5s ease;
+        }
+    </style>
+
 </head>
 
 <body style="background-color: rgb(39, 38, 38);">
@@ -42,14 +52,14 @@
     <br>
     
     <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: transparent;">
+    <div class="jumbotron jumbotron-fluid" style="background-color: transparent; margin-top: 6rem;">
         <center>
             <h1 class="display-1" style="color: white;"> 
-                <span class="display-4">project</span> OCULUS</h1>
-            <p class="lead" style="color: white;">project_desc</p>
+                <span class="display-4">project</span><span style="color: #FD6A02"> OCULUS</span></h1>
+            <!-- <p class="lead" style="color: white;">project_desc</p> -->
             <hr class="my-4" style="background-color: white; width: 70%"/>
             <p class="lead">
-                <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                <a class="btn btn-outline-dark btn-lg" href="{{ url_for('test')}}" role="button" style="color: #FD6A02; border-color: #FD6A02;">Test Now!</a>
             </p>
         </center>
     </div>
