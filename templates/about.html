@@ -12,7 +12,6 @@
 
     <title>Oculus | About</title>
     <style>
-        body {}
 
         .card {
             transition: box-shadow .3s;
@@ -43,7 +42,7 @@
 
         .orang {
             background-color: #FD6A02;
-            height: 200px;
+            height: 500px;
 
         }
 
@@ -56,6 +55,14 @@
         .usecase {
             margin-top: 100px;
         }
+
+        .element {
+        background-image:
+        url(https://bitbucket-marketing-cdn.atlassian.com/dam/jcr:cd01b96d-381e-49ab-a487-c7d1df92cf59/atlassian%20wave%20adg30524.svg?cdnVersion=jh);
+        background-position: center bottom;
+        background-size: 1440px 126px;
+        background-repeat: repeat-x;
+        }
     </style>
 </head>
 
@@ -64,7 +71,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="{{ url_for('home') }}" style="color: white;">
-
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="" srcset="" width="100px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +100,7 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-5 text-center white-color">What is <b style="color: #FD6A02;">OCULUS</b>?</h1>
+            <h1 class="display-5 text-center white-color">What is <b style="color: #FD6A02;">OCULUS</b>?</h1><br>
             <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
                 ADHD,Autism and Dyslexia.The project aims early detection of 'Autism' and 'Dyslexia' through a 
                 web platform fueled by machine learning. 
@@ -112,7 +119,7 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-5 text-center white-color">DETECTION</h1>
+            <h1 class="display-5 text-center white-color" style="color: #FD6A02;">DETECTION</h1>
             <p>
                 <div class="card-deck">
                     <div class="card">
@@ -159,7 +166,7 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-5 text-center white-color">APPROACH</h1>
+            <h1 class="display-5 text-center white-color" style="color: #FD6A02;">APPROACH</h1><br>
             <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
                 ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
@@ -171,17 +178,17 @@
         </div>
     </div>
 
-
+<!-- 
     <div class="waveimg">
         <img src="{{url_for('static', filename='wave.png')}}" style="height: auto;
     max-width: 100%;" /></center>
         <div class="orang"></div>
-    </div>
+    </div> -->
 
 
     <div class="jumbotron jumbotron-fluid usecase">
         <div class="container">
-            <h1 class="display-5 text-center white-color">USE CASE </h1>
+            <h1 class="display-5 text-center white-color" style="color: #FD6A02;">USE CASE </h1><br>
             <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
                 ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
@@ -193,10 +200,20 @@
         </div>
     </div>
 <center>
-    <div class="white-color">Made with <span style="color: #e25555;">&#9829;</span> by GALACTICOS
+    <div class="white-color">Made with ⚡ by GALACTICOS
     </div>
 
 </center>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
+    <style type="text/css">
+        .st0 {
+            fill: #FD6A02;
+        }
+    </style>
+    <path class="st0" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
+</svg>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
