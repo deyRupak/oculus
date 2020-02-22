@@ -47,7 +47,7 @@
                     <a class="nav-link active" href="{{ url_for('about') }}" style="color: white;">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Link</a>
+                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Test</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: white;">Link</a>
@@ -76,7 +76,7 @@
                 <h5 class="card-title">DYSLEXIA</h5>
                 <p class="card-text">desc</p>
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('dyslexia') }}" role="button">Test Now!</a>
                 </p>
             </div></center>
         </div>
@@ -88,7 +88,8 @@
                 <h5 class="card-title">ADHD</h5>
                 <p class="card-text">desc</p>
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('adhd') }}" role="button">Test
+                        Now!</a>
                 </p>
             </div></center>
         </div>
@@ -100,7 +101,8 @@
                 <h5 class="card-title">AUTISM</h5>
                 <p class="card-text">desc</p>
                 <p class="lead">
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Test Now!</a>
+                    <a class="btn btn-outline-primary btn-lg" href="{{ url_for('autism') }}" role="button">Test
+                        Now!</a>
                 </p>
             </div>
             </center>
