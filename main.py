@@ -1,10 +1,16 @@
 from flask import Flask, render_template
 import pickle
 
+import time
+import multiprocessing
+
 import cv2
 import matplotlib.pyplot as plt
 import datetime
-from GazeTracking import gaze_tracking
+import fastai 
+from fastai.vision import *
+import os
+from gaze_tracking import GazeTracking
 import seaborn as sns
 
 
@@ -12,9 +18,12 @@ app = Flask(__name__)
 
 
 def ValuePredictor(img_to_check):
-    loaded_model = pickle.load(open("autismX.pkl", "rb"))
-    result = loaded_model.predict(img_to_check)
-    return result
+
+    path = Path("./model/")
+    learn = load_learner(path)
+    pred_class,pred_idx,outputs = learn.predict(img_to_check)
+
+    return str(pred_class)
 
 @app.route("/")
 def home():
@@ -43,6 +52,16 @@ def adhd():
 
 @app.route("/autism")
 def autism():
+    return render_template("./test/autism.html")
+
+@app.route("/autismRes")
+def autismRes():
+
+    #app3 code
+    # p = multiprocessing.Process(target = ValuePredictor, name="valuePredictor", args=())
+    # p.start()
+    # time.sleep(10)
+    # p.terminate()
 
     sns.set(style="ticks", context="talk")
     plt.style.use("dark_background")
@@ -78,14 +97,17 @@ def autism():
 
     plt.savefig('1.png')
 
-
-    result = ValuePredictor('1.png')
-    if result == 'TSL':
+    img = open_image('./1.png')
+    result = ValuePredictor(img)
+    if result != 'TSImages':
         prediction = "Autistic"
     else:
         prediction = "Not Autistic"
     return render_template("./test/autism.html", prediction = prediction)
-    return render_template("./test/autism.html")
+
+
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
+    # We made two new changes
