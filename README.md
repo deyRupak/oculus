@@ -9,6 +9,8 @@ The project aims early detection of 'Autism' through a web platform fueled by ma
 #### Problem Addressed
 It is estimated that 1 in 59 children have Autism. Early warning signs of potential development of autism are very useful, because the treatment procedures can be started earlier, thus decreasing the struggle of the child. Cheap, fast and easy methods for detecting early warning signs of these disorders of the neurological development of children are needful.
 
+A chronic condition including attention difficulty, hyperactivity and impulsiveness. ADHD often begins in childhood and can persist into adulthood. It may contribute to low self-esteem, troubled relationships and difficulty at school or work. Symptoms include limited attention and hyperactivity. Treatments include medication and talk therapy.
+
 #### Solution
 A free, web-based-application that uses a standard computer webcam to screen a child while reading a passage on the screen and recording fixation
 time while reading.
