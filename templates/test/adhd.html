@@ -28,6 +28,15 @@
             -moz-box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
             box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
         }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { 
+            border: 1px solid #FD6A02;
+            background-color: rgb(39, 38, 38);
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid #FD6A02;
+        }
     </style>
 </head>
 
@@ -63,7 +72,7 @@
 
                 <center>
                     <div class="card-body">
-                        <a href="{{ url_for('autism') }}" style="text-decoration: none; color: white">
+                        <a href="{{ url_for('adhdRes') }}" style="text-decoration: none; color: white">
                             <h5 class="card-title"> Start Test!
                             </h5>
                         </a>
@@ -72,9 +81,46 @@
             </div>
 
             <br><br>
-            <img src="{{url_for('static', filename='download.svg')}}" class="img-fluid" alt="Responsive image"><br><br>
 
-            <h1>{{prediction}}</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 80%;">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">EASY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">MEDIUM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">HARD</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container"><br><br>
+                <p style="color: white; font-size: xx-large;">Mahabharat tells the story of Hastinapur, a kingdom ruled by the Kuru clan where the Kaurava and the Pandava brothers compete for its throne. The Pandavas are the sons of Pandu, and the Kauravas are the sons of Dhritrashtra. Yudhistira (the eldest Pandav brother) and Duryodhan, the eldest Kaurava brother, claim to be next in the line of succession.</p>
+            </div>
+            </div>
+            
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container"><br>
+                <p style="color: white;  font-size: xx-large;">The story begins with Devavrata, the son of Shantanu and Ganga and a disciple of Parshuram. Devavrata earns the name Bhisma by taking an oath of celibacy to fulfill his father's wish to marry Satyavati. He also vows to serve the throne of Hastinapur and is granted icchya-mrityu (the ability to live forever, as long as he does not choose to die). Bhisma gives up his rightful throne, and Satyavati rules the kingdom as the Rajmaata (mother of the king) after her husband's death. Her son, Vichitravirya, is an alcoholic who is dependent on Bhisma. He cannot rule the kingdom, leading Satyavati to decide that Vichitravirya's future son must rule the kingdom.
+
+                    </p>
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container"><br>
+                <p style="color: white; font-size: xx-large;">In Kuntibhoj, Princess Kunti obtains a boon from the sage Durvasa enabling her to invoke any deity and bear his child. She tests the blessing, calling on the Sun God and being given a son named Karna. An unmarried woman, Kunti sets Karna afloat on the Ganges to avoid embarrassment. She later marries Pandu, son of Vichitravirya, and invokes other deities to give her three sons: Yudhistira, Bhima, and Arjuna. Madri, Pandu's second wife, invokes the Ashwini Kumaras to bear Nakula and Sahadeva. Ahe and Pandu die of a curse by Rishi Kimdam, and Kunti decides to raise the five children together.
+
+                    Karna is raised by a charioteer named Adirath and his wife, Radha. Belonging to a lower-caste family, he is often mistreated but becomes a skilled archer. Karna's true identity is not revealed until the end of the Kurukshetra War.
+                    
+                    </p>
+            </div>
+        </div>
+          </div>
+
+    
+            <h1 style="color: #FD6A02;">{{prediction}}</h1>
         </center>
 
 
