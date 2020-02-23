@@ -4,7 +4,7 @@
 
 The project aims early detection of 'Autism' through a web platform fueled by machine learning. 
 
-<center><img src="./static/banner.png" width="500px"></center>
+<center><img src="./static/banner.PNG" width="500px"></center>
 
 #### Problem Addressed
 It is estimated that 1 in 59 children have. Early warning signs of potential development of autism are very useful, because the treatment procedures can be started earlier, thus decreasing the struggle of the child. Cheap, fast and easy methods for detecting early warning signs of these disorders of the neurological development of children are needful.
