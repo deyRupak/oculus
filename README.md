@@ -1,10 +1,10 @@
 # oculus
 
-<center><img src="./static/logo.png" width="100px"></center>
+<img src="./static/logo.png" width="100px" align="center">
 
 The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
 
-<center><img src="./static/banner.PNG" width="500px"></center>
+<img src="./static/banner.PNG" width="500px" align="center">
 
 #### Problem Addressed
 It is estimated that 1 in 59 children have Autism. Early warning signs of potential development of autism are very useful, because the treatment procedures can be started earlier, thus decreasing the struggle of the child. Cheap, fast and easy methods for detecting early warning signs of these disorders of the neurological development of children are needful.
@@ -14,6 +14,10 @@ A chronic condition including attention difficulty, hyperactivity and impulsiven
 #### Solution
 A free, web-based-application that uses a standard computer webcam to screen a child while reading a passage on the screen and recording fixation
 time while reading.
+
+<img src="./static/instruct.PNG" width="500px" align="left">
+<img src="./static/before.PNG" width="500px" align="center">
+<img src="./static/after.PNG" width="500px" align="right">
 
 #### Approach
 1. Get real-time info of user's eye movement using OpenCV.
