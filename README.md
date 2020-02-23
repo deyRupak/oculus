@@ -3,9 +3,12 @@
 <img src="./static/logo.png" width="100px" align="center">
 </p>
 The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
+<br>
 <p align="center">
 <img src="./static/banner.PNG" width="500px" align="center">
 </p>
+<br>
+
 #### Problem Addressed
 It is estimated that 1 in 59 children have Autism. Early warning signs of potential development of autism are very useful, because the treatment procedures can be started earlier, thus decreasing the struggle of the child. Cheap, fast and easy methods for detecting early warning signs of these disorders of the neurological development of children are needful.
 
@@ -14,11 +17,13 @@ A chronic condition including attention difficulty, hyperactivity and impulsiven
 #### Solution
 A free, web-based-application that uses a standard computer webcam to screen a child while reading a passage on the screen and recording fixation
 time while reading.
-<p align="center">
-<img src="./static/instruct.jpg" width="400px" align="center"><br><br>
-<img src="./static/before.jpg" width="400px" align="center"><br><br>
-<img src="./static/after.jpg" width="400px" align="center"><br><br>
-</p>
+<br>
+
+<div align="center" >
+<img src="./static/before.jpg" width="300px" ><br><br>
+<img src="./static/after.jpg" width="300px" ><br><br>
+</div>
+
 #### Approach
 1. Get real-time info of user's eye movement using OpenCV.
 2. Gather the co-ordinates of the pupil according to the viewport.
