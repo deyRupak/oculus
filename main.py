@@ -1,13 +1,10 @@
 from flask import Flask, render_template
 import pickle
 
-import time
-import multiprocessing
-
 import cv2
 import matplotlib.pyplot as plt
 import datetime
-from gaze_tracking import GazeTracking
+from GazeTracking import gaze_tracking
 import seaborn as sns
 
 
@@ -46,13 +43,6 @@ def adhd():
 
 @app.route("/autism")
 def autism():
-
-    #app3 code
-    # p = multiprocessing.Process(target = ValuePredictor, name="valuePredictor", args=())
-    # p.start()
-    # time.sleep(10)
-    # p.terminate()
-
 
     sns.set(style="ticks", context="talk")
     plt.style.use("dark_background")
@@ -95,8 +85,7 @@ def autism():
     else:
         prediction = "Not Autistic"
     return render_template("./test/autism.html", prediction = prediction)
-
+    return render_template("./test/autism.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
-    # We made two new changes
