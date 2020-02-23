@@ -15,9 +15,9 @@ A chronic condition including attention difficulty, hyperactivity and impulsiven
 A free, web-based-application that uses a standard computer webcam to screen a child while reading a passage on the screen and recording fixation
 time while reading.
 
-<img src="./static/instruct.PNG" width="500px" align="left">
-<img src="./static/before.PNG" width="500px" align="center">
-<img src="./static/after.PNG" width="500px" align="right">
+<img src="./static/instruct.jpg" width="500px" align="left">
+<img src="./static/before.jpg" width="500px" align="center">
+<img src="./static/after.jpg" width="500px" align="right">
 
 #### Approach
 1. Get real-time info of user's eye movement using OpenCV.
