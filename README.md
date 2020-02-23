@@ -3,7 +3,7 @@
 <img src="./static/logo.png" width="100px" align="center">
 </p>
 The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
-<br>
+<br><br>
 <p align="center">
 <img src="./static/banner.PNG" width="500px" align="center">
 </p>
@@ -17,12 +17,19 @@ A chronic condition including attention difficulty, hyperactivity and impulsiven
 #### Solution
 A free, web-based-application that uses a standard computer webcam to screen a child while reading a passage on the screen and recording fixation
 time while reading.
+
+<br>
 <br>
 
-<div align="center" >
-<img src="./static/before.jpg" width="300px" ><br><br>
-<img src="./static/after.jpg" width="300px" ><br><br>
-</div>
+<table align="center">
+   <tr>
+      <th><img src="./static/before.jpg" width="400px" ></th>
+      <th><img src="./static/after.jpg" width="400px" ></th>
+   </tr>
+</table>
+
+<br>
+<br>
 
 #### Approach
 1. Get real-time info of user's eye movement using OpenCV.
