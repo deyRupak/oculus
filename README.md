@@ -2,7 +2,7 @@
 
 <center><img src="./static/logo.png" width="100px"></center>
 
-The project aims early detection of 'Autism' through a web platform fueled by machine learning. 
+The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
 
 <center><img src="./static/banner.PNG" width="500px"></center>
 
