@@ -11,6 +11,24 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Oculus | ADHD</title>
+
+    <style>
+        .card {
+            background-color: rgb(39, 38, 38);
+            transition-delay: 2s ease;
+            color: white;
+            border: 1px solid #FD6A02;
+            height: 4rem;
+            width: 10rem;
+            margin-top: 5rem;
+        }
+
+        .card:hover {
+            -webkit-box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+            -moz-box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+            box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+        }
+    </style>
 </head>
 
 <body style="background-color: rgb(39, 38, 38);">
@@ -30,15 +48,35 @@
                     <a class="nav-link active" href="{{ url_for('about') }}" style="color: white;">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Test</a>
+                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Take Test</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Link</a>
+                    <!-- <a class="nav-link" href="#" style="color: white;">Link</a> -->
                 </li>
             </ul>
         </div>
     </nav>
     <br>
+
+        <center>
+            <div class="card" style="border-radius: 1rem;">
+
+                <center>
+                    <div class="card-body">
+                        <a href="{{ url_for('autism') }}" style="text-decoration: none; color: white">
+                            <h5 class="card-title"> Start Test!
+                            </h5>
+                        </a>
+                    </div>
+                </center>
+            </div>
+
+            <br><br>
+            <img src="{{url_for('static', filename='download.svg')}}" class="img-fluid" alt="Responsive image"><br><br>
+
+            <h1>{{prediction}}</h1>
+        </center>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

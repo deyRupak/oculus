@@ -24,17 +24,7 @@
             -webkit-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
             -moz-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
             box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
-        /* color: rgb(39, 38, 38);
-        background-color: white; */
         }
-
-        /* .btn-outline-dark:hover{
-        background-color: rgb(39, 38, 38);
-        -webkit-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
-        -moz-box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
-        box-shadow: -1px 0px 17px 4px rgba(253,106,2,1);
-        transition-delay: 1.5s ease;
-        } */
     </style>
 </head>
 
@@ -55,10 +45,10 @@
                     <a class="nav-link active" href="{{ url_for('about') }}" style="color: white;">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Test</a>
+                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Take Test</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">Link</a>
+                    <!-- <a class="nav-link" href="#" style="color: white;">Link</a> -->
                 </li>
             </ul>
         </div>
@@ -79,27 +69,19 @@
         </center>
     </div>
 
+    <center>
     <div class="container" style="color: azure;">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, nulla vel! Enim quibusdam veniam voluptatum praesentium neque dolor eum fugit beatae. Aspernatur quisquam placeat hic ea animi tenetur doloribus excepturi?</p>
+        <p>
+            1. This page is playing audio. Kindly keep the volume 🔊 turned on.<br><br>
+            2. Click on the left tab for <b>'ADHD'</b> Test & on the right tab for <b>'AUTISM'</b> Test.<br><br>
+            3. After you click on the tabs you'll be shown a set of running images.<br><br>
+            4. Observe those images while trying to distinguish between them.
+        </p>
     </div>
+    </center>   
 
     <!-- card Options -->
     <div class="card-deck container mx-auto" style="margin-top: 10rem;">
-
-        <div class="card" 
-        style="border-radius: 1rem;"> 
-
-            <center><div class="card-body mx-auto">
-                <a href="{{ url_for('dyslexia') }}" style="text-decoration: none; color: white">
-                    <h5 class="card-title"> DYSLEXIA
-                </h5></a>
-                
-                <p class="lead">
-                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('dyslexia') }}" role="button"
-                        style="color: #FD6A02; border-color: #FD6A02;">Test Now!</a> -->
-                </p>
-            </div></center>
-        </div>
 
         <div class="card" 
         style="border-radius: 1rem;">
@@ -109,12 +91,6 @@
                     <h5 class="card-title"> ADHD
                     </h5>
                 </a>
-                
-                <p class="lead">
-                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('adhd') }}" role="button"
-                        style="color: #FD6A02; border-color: #FD6A02;">Test
-                        Now!</a> -->
-                </p>
             </div></center>
         </div>
 
@@ -126,12 +102,6 @@
                     <h5 class="card-title"> AUTISM
                     </h5>
                 </a>
-                
-                <p class="lead">
-                    <!-- <a class="btn btn-outline-dark btn-lg" href="{{ url_for('autism') }}" role="button"
-                        style="color: #FD6A02; border-color: #FD6A02;">Test
-                        Now!</a> -->
-                </p>
             </div>
             </center>
         </div>
