@@ -52,9 +52,6 @@
             margin-top: -130px;
         }
 
-        .usecase {
-            margin-top: 100px;
-        }
 
         .element {
         background-image:
@@ -100,16 +97,11 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-5 text-center white-color">What is <b style="color: #FD6A02;">OCULUS</b>?</h1><br>
-            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
+            <h1 class="display-3 text-center white-color">What is <b style="color: #FD6A02;">OCULUS</b>?</h1><br>
+            <p class="lead white-color" style="text-align: center;">Helping the 'special ones' using the power of machine learning to detect
                 ADHD,Autism and Dyslexia.The project aims early detection of 'Autism' and 'Dyslexia' through a 
-                web platform fueled by machine learning. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
-                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
-                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
-                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
-                Duis aliquet commodo iaculis.</p>
+                web platform fueled by machine learning. It uses a standard computer webcam to screen a children while
+            he/she sees photograph/s or reads a passage on the screen.</p>
 
         </div>
     </div>
@@ -122,39 +114,29 @@
             <h1 class="display-5 text-center white-color" style="color: #FD6A02;">DETECTION</h1>
             <p>
                 <div class="card-deck">
-                    <div class="card">
-                        <div class="card-body inside-card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body inside-card">
                             <h5 class="card-title">ADHD</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            
+                            <p class="card-text">
+                                A chronic condition including attention difficulty, hyperactivity and impulsiveness.
+
+                            </p>
+                            <a href="{{ url_for('adhd')}}" class="card-link">Take Test</a>
+                            
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body inside-card">
                             <h5 class="card-title">AUTISM</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            
+                            <p class="card-text">A learning disorder characterised by difficulty reading.
+</p>
+                            <a href="{{ url_for('autism')}}" class="card-link">Take Test</a>
+                            
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body inside-card">
-                            <h5 class="card-title">DYSLEXIA</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                
                 </div>
             </p>
         </div>
@@ -167,35 +149,40 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-5 text-center white-color" style="color: #FD6A02;">APPROACH</h1><br>
-            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
-                ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
-                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
-                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
-                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
-                Duis aliquet commodo iaculis.</p>
+            <p class="lead white-color" style="text-align: center;">
+                The project detects the child's pupil movement across the screen, hence giving a hint about his/her early symptoms of Autism & ADHD.
+                It does this by plotting a graph based on the co-ordinates of the pupil recorded according to the viewport. <br>These points are then fed 
+                into a machine learning model trained to classify these patterns and thus showing the results as positive or negative against the 
+                opted test.
+            </p>
 
         </div>
     </div>
 
-<!-- 
-    <div class="waveimg">
-        <img src="{{url_for('static', filename='wave.png')}}" style="height: auto;
-    max-width: 100%;" /></center>
-        <div class="orang"></div>
-    </div> -->
-
 
     <div class="jumbotron jumbotron-fluid usecase">
         <div class="container">
-            <h1 class="display-5 text-center white-color" style="color: #FD6A02;">USE CASE </h1><br>
-            <p class="lead white-color">Helping the 'special ones' using the power of machine learning to detect
-                ADHD,Autism and Dyslexia.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed ac nibh sed ante porta feugiat vel non diam. Morbi ut lacinia elit, congue aliquet turpis.
-                Integer dictum aliquet nisl, non aliquam metus ullamcorper at. Nulla vulputate vitae nibh ut
-                consequat. Curabitur massa metus, varius quis risus a, mollis molestie nulla. Donec quam dui,
-                cursus quis neque gravida, mollis imperdiet augue. Pellentesque nec molestie quam.
-                Duis aliquet commodo iaculis.</p>
+            <h1 class="display-5 text-center white-color" style="color: #FD6A02;">USE CASES</h1><br>
+            <p class="lead white-color" style="text-align: center;">
+                Can be extended to/for:
+                    <ul class="white-color" style="text-align: center; list-style: none;">
+                        <li> 
+                            <h3>
+                                Schools 
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                Pediatrician
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                Self Diagnosis
+                            </h3>
+                        </li>
+                    </ul>
+            </p>
 
         </div>
     </div>
