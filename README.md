@@ -1,8 +1,9 @@
 # oculus
 <p align="center">
 <img src="./static/logo.png" width="100px" align="center">
-</p>
+
 The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
+</p>
 <br><br>
 <p align="center">
 <img src="./static/banner.PNG" width="500px" align="center">
