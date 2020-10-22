@@ -1,0 +1,7 @@
+opencv-python
+matplotlib
+fastai
+tensorflow
+Flask
+seaborn
+pickle
