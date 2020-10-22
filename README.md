@@ -67,7 +67,7 @@ git clone https://github.com/deyRupak/oculus.git
 ```
 Install the dependencies : 
 ```
-pip install <dependency_name>
+pip install -r req.txt
 ```
 
 Change the directory : 
